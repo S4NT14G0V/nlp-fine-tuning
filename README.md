@@ -68,6 +68,40 @@ Métricas complementarias:
 
 Los tres entrenamientos finales tomaron **44,7 minutos** en total en una GPU T4 de Google Colab.
 
+## Modelos publicados
+
+Los tres modelos finales están publicados en Hugging Face y se pueden usar directamente:
+
+| Problema | Modelo |
+|---|---|
+| 1. Emociones en tweets | [`s4nt14g0v/bert-emotion-tweets`](https://huggingface.co/s4nt14g0v/bert-emotion-tweets) |
+| 2. Entidades nombradas | [`s4nt14g0v/bert-ner-conll2003`](https://huggingface.co/s4nt14g0v/bert-ner-conll2003) |
+| 3. Traducción en → es | [`s4nt14g0v/opus-mt-en-es-literatura`](https://huggingface.co/s4nt14g0v/opus-mt-en-es-literatura) |
+
+```python
+from transformers import pipeline
+
+emociones = pipeline("text-classification", model="s4nt14g0v/bert-emotion-tweets")
+print(emociones("i feel so excited about this project"))
+
+ner = pipeline("token-classification", model="s4nt14g0v/bert-ner-conll2003", aggregation_strategy="first")
+print(ner("Santiago studies at the University of Antioquia in Medellin"))
+```
+
+El traductor se usa con `AutoTokenizer` y `AutoModelForSeq2SeqLM`, porque las versiones recientes de `transformers` ya no incluyen el `pipeline` de traducción. El ejemplo está en la [ficha del modelo](https://huggingface.co/s4nt14g0v/opus-mt-en-es-literatura).
+
+## Estructura del repositorio
+
+```
+├── NLP_Proyecto_2.ipynb          # notebook con todo el desarrollo
+├── README.md
+└── resultados/
+    ├── resultados_finales.json   # métricas de test de los tres problemas
+    ├── p1_emotion/               # búsqueda de hiperparámetros del problema 1
+    ├── p2_ner/                   # búsqueda de hiperparámetros del problema 2
+    └── p3_traduccion/            # búsqueda de hiperparámetros del problema 3
+```
+
 ## Hallazgos principales
 
 - **El learning rate fue el hiperparámetro más importante.** Con `1e-5` los modelos aprendieron demasiado lento en 3 épocas. Entre `3e-5` y `1e-4` los resultados fueron parecidos. El batch size influyó poco.
