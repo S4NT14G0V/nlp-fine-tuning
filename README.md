@@ -6,6 +6,10 @@ Proyecto 2 del curso *Fundamentos en Procesamiento del Lenguaje Natural*, Univer
 
 Autor: **Santiago Trespalacios Bolívar** · [GitHub](https://github.com/s4nt14g0v) · [LinkedIn](https://www.linkedin.com/in/santiago-trespalacios-bolivar/)
 
+Video: [Youtube](https://youtu.be/tejTH53D1KE)
+
+Linkedin Post: https://lnkd.in/p/eNjymURc 
+
 ---
 
 ## Descripción
