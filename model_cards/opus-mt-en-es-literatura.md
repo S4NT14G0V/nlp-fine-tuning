@@ -21,7 +21,7 @@ tags:
 
 `Helsinki-NLP/opus-mt-en-es` (MarianMT, un encoder-decoder) ajustado (_fine-tuned_) para **traducir literatura clásica del inglés al español**. El modelo original ya traducía; el fine-tuning lo adapta al estilo de las traducciones publicadas de novelas: la raya de diálogo, el registro y el vocabulario de época.
 
-Es el problema 3 (secuencia a secuencia) del Proyecto 2 del curso _Fundamentos en Procesamiento del Lenguaje Natural_ de la Universidad de Antioquia. Todo el desarrollo está en el repositorio [nlp-fine-tuning-transformers](https://github.com/s4nt14g0v/nlp-fine-tuning-transformers).
+Es el problema 3 (secuencia a secuencia) del Proyecto 2 del curso _Fundamentos en Procesamiento del Lenguaje Natural_ de la Universidad de Antioquia. Todo el desarrollo está en el repositorio [nlp-fine-tuning-transformers](https://github.com/s4nt14g0v/nlp-fine-tuning).
 
 ## Uso
 

@@ -25,7 +25,7 @@ tags:
 - **LOC:** lugares.
 - **MISC:** otras entidades, como nacionalidades, eventos y torneos.
 
-Es el problema 2 (etiquetado de secuencias) del Proyecto 2 del curso *Fundamentos en Procesamiento del Lenguaje Natural* de la Universidad de Antioquia. Todo el desarrollo está en el repositorio [nlp-fine-tuning-transformers](https://github.com/s4nt14g0v/nlp-fine-tuning-transformers).
+Es el problema 2 (etiquetado de secuencias) del Proyecto 2 del curso *Fundamentos en Procesamiento del Lenguaje Natural* de la Universidad de Antioquia. Todo el desarrollo está en el repositorio [nlp-fine-tuning-transformers](https://github.com/s4nt14g0v/nlp-fine-tuning).
 
 ## Uso
 

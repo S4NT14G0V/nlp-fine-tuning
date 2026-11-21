@@ -18,7 +18,7 @@ tags:
 
 `bert-base-uncased` ajustado (_fine-tuned_) para detectar **6 emociones en tweets en inglés**: sadness, joy, love, anger, fear y surprise.
 
-Es el problema 1 (clasificación de secuencias) del Proyecto 2 del curso _Fundamentos en Procesamiento del Lenguaje Natural_ de la Universidad de Antioquia. Todo el desarrollo está en el repositorio [nlp-fine-tuning-transformers](https://github.com/s4nt14g0v/nlp-fine-tuning-transformers).
+Es el problema 1 (clasificación de secuencias) del Proyecto 2 del curso _Fundamentos en Procesamiento del Lenguaje Natural_ de la Universidad de Antioquia. Todo el desarrollo está en el repositorio [nlp-fine-tuning-transformers](https://github.com/s4nt14g0v/nlp-fine-tuning).
 
 ## Uso
 
