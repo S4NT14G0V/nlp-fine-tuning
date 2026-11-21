@@ -90,6 +90,8 @@ print(ner("Santiago studies at the University of Antioquia in Medellin"))
 
 El traductor se usa con `AutoTokenizer` y `AutoModelForSeq2SeqLM`, porque las versiones recientes de `transformers` ya no incluyen el `pipeline` de traducción. El ejemplo está en la [ficha del modelo](https://huggingface.co/s4nt14g0v/opus-mt-en-es-literatura).
 
+Dentro de [model_cards](https://github.com/S4NT14G0V/nlp-fine-tuning/tree/main/model_cards) se encuentra además un resume de cada uno de los problemas abordados.
+
 ## Estructura del repositorio
 
 ```
@@ -100,6 +102,7 @@ El traductor se usa con `AutoTokenizer` y `AutoModelForSeq2SeqLM`, porque las ve
     ├── p1_emotion/               # búsqueda de hiperparámetros del problema 1
     ├── p2_ner/                   # búsqueda de hiperparámetros del problema 2
     └── p3_traduccion/            # búsqueda de hiperparámetros del problema 3
+└── model_cards/                  # resumen de los tres problemas
 ```
 
 ## Hallazgos principales
